@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/tvDialogHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#999999"
+        android:letterSpacing="0.05"
+        android:lineSpacingExtra="-1.5sp"
+        android:text="CREATE ROOM"
+        />
+
+    <EditText
+        android:id="@+id/etDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_edit_text"
+        android:textSize="16sp"
+        android:textColorHint="#999999"
+        android:letterSpacing="0.07"
+        android:lineSpacingExtra="14sp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:paddingStart="7.5dp"
+        android:hint="Room name…"/>
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:letterSpacing="0.07"
+        android:lineSpacingExtra="5sp"
+        android:textColor="#999999"
+        android:enabled="true"
+        android:textSize="13.5sp"
+        tools:text="CONFIRM" />
+
+</LinearLayout>

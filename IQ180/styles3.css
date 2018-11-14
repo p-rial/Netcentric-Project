@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:  rgb(0, 157, 255);
+    font-size: 0.8em;
+    background-color: rgb(182, 246, 255);
+    font-family: Quicksand;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    margin: 40px;
+ 
+   
+}
+ul{
+    list-style: none;
+}
+.box{
+   height: 400px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 2px solid  lightskyblue;
+    border-radius: 20px;
+    margin: 10px;
+    overflow-y: scroll;
+      
+}
+.btn{
+    display: -ms-inline-grid;
+    grid-auto-columns: 1fr 1fr;
+    margin-left: 60px;
+   
+    font-size: 1em;
+    color: rgb(0, 157, 255);
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 2px solid  lightskyblue;
+    border-radius: 10px;
+    /* width: 10%; */
+}
+#create{
+    font-size: 0.5em;
+    color: rgb(0, 157, 255);
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 2px solid  lightskyblue;
+    border-radius: 10px;
+}
+.box3{
+    
+    display: none;
+    
+    }
+    
+#roomnamebox{
+    width:300px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.show{
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+  opacity: 1;
+   
+}
+.show2{
+    position:absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+  opacity: 1;
+   
+}
+.opacity{
+    opacity: 0.1;
+}
+.roomCreate{
+    color: rgb(199, 94, 9);
+    background-color: lightgoldenrodyellow;
+    border: 2px solid  rgb(199, 94, 9);
+    border-radius: 10px;
+    transition: ease-in 0.3s;
+    margin: 2px;
+}
+.textloader{
+    opacity: 0;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite;
+    opacity: 0;
+  }
+  .loader2{
+    position:absolute;
+    top: 40%;
+    left: 46%;
+    transform: translate(-50%,-50%);
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 1.5s linear infinite;
+    opacity: 1;
+
+  }
+  .how2play{
+      opacity: 0;
+  }
+  
+/* 
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+  .roomCreate:hover{
+      cursor: pointer;
+  }
+.btn:hover{
+  
+    background-color: rgb(0, 157, 255);
+    color: whitesmoke;
+    transition: ease-in  0.4s;
+    cursor: pointer;
+}
+#create:hover{
+        background-color: rgb(0, 157, 255);
+        color: whitesmoke;
+        transition: ease-in  0.4s;
+        cursor: pointer;
+
+    
+}
+@media screen and (max-width: 600px){
+    body{
+        font-size: 0.5em;
+    }
+}

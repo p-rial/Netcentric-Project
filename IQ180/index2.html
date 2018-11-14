@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IQ180play</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="/styles2.css" rel="stylesheet"  />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+
+<body>
+   <div class="topbar">
+    <p id="playername" class="playername">Player1:</p>
+     <p id="roundname" class="playername">IQ180</p>
+     <p id="playername" class="playername">Player2:</p>
+     <p id="score" class="playername">Score:</p>
+    
+      <p id="countdown" class="timer">0:00</p>
+      <p id="score2" class="playername">Score:</p>
+     </div>
+    <div class="container">
+        <input type="text" READONLY class="textbox" id="textbox">
+
+        <p id="result" class="result"></p>
+    </div>
+    <form id="number">
+        <button  type="button"  onclick="clickbtn1(); disablebtn();" class="num" id="numbutton"name="btn">.</button>
+        <button  type="button" onclick="clickbtn2()"  class="num" id="numbutton2" name="btn">.</button>
+        <button  type="button" onclick="clickbtn3()"class="num" id="numbutton3"name="btn" > .</button>
+        <button  type="button" onclick="clickbtn4()"class="num" id="numbutton4"name="btn"> .</button>
+        <button  type="button" onclick="clickbtn5()"class="num" id="numbutton5"name="btn">. </button>
+        <button  type="button" onclick="clickbtn6()"class="num">+</button>
+        <button  type="button" onclick="clickbtn7()"class="num">-</button>
+        <button  type="button" onclick="clickbtn8()"class="num">*</button>
+        <button  type="button" onclick="clickbtn9()"class="num">/</button>
+        <button  type="button" onclick="clickbtn10()"class="num">(</button>
+        <button  type="button" onclick="clickbtn11()"class="num">)</button>
+  <button type="button" onclick="clearbox()" class="box">clear</button>
+        <button type="button" onclick="checkresult();" id="box" class="box">answer</button>
+    </form>
+    <button type="button" onclick="randomresult();randomans();mintimer();checkbtn();erasestart();" class="boxstart" id="boxstart">start</button>
+     
+    <script src="app2.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io("http://localhost:3000"); -->
+    <!-- </script> -->
+</body>
+
+</html>

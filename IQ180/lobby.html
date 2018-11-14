@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lobby</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles3.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <ul id="room" class="box"></ul>
+            <li>Room</li>
+        </ul>
+        <ul id="player" class="box">
+            <li>Player list</li>
+        </ul>
+    </div>
+    <form id="event" class="box2">
+        <button onclick='createRoom()'id='create'class="btn">Create</button>
+        <button class="btn">Single</button>
+     
+    </form>
+    <form id="hide" class="box3">
+        <input type="text" placeholder="Room name" id="roomname" >
+        <button id='create'class="btn">Confirm</button>
+    </form>
+    <script src="client.js"></script>
+</body>
+</html>
